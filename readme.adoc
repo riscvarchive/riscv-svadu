@@ -1,10 +1,7 @@
-= RISC-V docs-spec-template
+= RISC-V Hardware Updating of PTE A/D Bits
+The Ssvhadu extension adds support and CSR control for hardware updating of PTE A/D bits for single-stage address translation. The Shvhadu extension adds support and CSR controls for hardware updating of PTE A/D bits for two-stage (G-stage and VS-stage) address translation.
 
-This repository is used to prime GitHub repos for the RISC-V organization which will be used
-to create specifications.
-
-**If you are reading this in a specification repo, please update the title for this section and
-provide your introduction to your repository.**
+The Shvhadu extension depends on the Ssvhadu extension and the H extension.
 
 = License
 
