@@ -1,5 +1,5 @@
 HEADER_SOURCE := header.adoc
-PDF_RESULT := example-spec.pdf
+PDF_RESULT := riscv-ssvhadu.pdf
 
 all: build
 
@@ -11,7 +11,6 @@ build:
     --attribute=pdf-fontsdir=docs-resources/fonts \
     --attribute=pdf-style=docs-resources/themes/riscv-pdf.yml \
     --failure-level=ERROR \
-    --require=asciidoctor-bibtex \
     --require=asciidoctor-diagram \
     --require=asciidoctor-mathematical \
     --out-file=$(PDF_RESULT) \
