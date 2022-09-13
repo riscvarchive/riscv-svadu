@@ -1,5 +1,5 @@
 HEADER_SOURCE := header.adoc
-PDF_RESULT := riscv-ssvhadu.pdf
+PDF_RESULT := riscv-ssvhadu-shvhadu.pdf
 
 all: build
 
