@@ -34,7 +34,7 @@ endif::[]
 :xrefstyle: short
 
 = RISC-V Hardware Updating of PTE A/D Bits (Ssvhadu and Shvhadu)
-ved Shanbhogue
+Ved Shanbhogue
 
 // Preamble
 [WARNING]
