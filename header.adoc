@@ -1,5 +1,5 @@
 [[header]]
-:description: RISC-V Hardware Updating of PTE A/D Bits (Ssvhadu and Shvhadu)
+:description: RISC-V Hardware Updating of PTE A/D Bits (Svadu)
 :company: RISC-V.org
 :revdate: 1/2022
 :revnumber: 1.0
@@ -60,4 +60,4 @@ This RISC-V specification has been contributed to directly or indirectly by:
 Aaron Durbin, Earl Killian, Greg Favor, Krste Asanović, Ved Shanbhogue
 
 [preface]
-include::ssvhadu.adoc[]
+include::svadu.adoc[]
