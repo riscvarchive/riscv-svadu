@@ -33,7 +33,7 @@ endif::[]
 :footnote:
 :xrefstyle: short
 
-= RISC-V Hardware Updating of PTE A/D Bits (Ssvhadu and Shvhadu)
+= RISC-V Hardware Updating of PTE A/D Bits (Svadu)
 Ved Shanbhogue
 
 // Preamble
