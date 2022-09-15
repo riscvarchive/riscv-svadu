@@ -1,8 +1,6 @@
 = RISC-V Hardware Updating of PTE A/D Bits
 
-The Ssvhadu extension adds support and CSR control for hardware updating of PTE A/D bits for single-stage address translation. The Shvhadu extension adds support and CSR controls for hardware updating of PTE A/D bits for two-stage (G-stage and VS-stage) address translation.
-
-The Shvhadu extension depends on the Ssvhadu extension and the H extension.
+The Ssadu extension adds support and CSR control for hardware updating of PTE A/D bits.
 
 = License
 
