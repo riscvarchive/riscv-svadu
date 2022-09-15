@@ -36,7 +36,8 @@ A/D bits. The A and D bits are managed by these extensions as follows:
   occur. The hart must not perform the memory access that caused the PTE update
   before the PTE update is globally visible.
 
-Svadu requires the page tables to be located in cacheable main memory PMA regions.
+Svadu extension requires the page tables to be located in cacheable main memory
+PMA regions.
 
 The translation of virtual addresses (or guest physical addresses) to physical
 (or guest physical) addresses is accomplished with the same algorithm as
@@ -54,15 +55,14 @@ translation process is as follows:
     a store, also set `pte.d` to 1.
 ... If the comparison fails, return to step 2
 
-The Svadu extension adds the `HADE` bit to `menvcfg`. The Svadu extension
-defines that when `menvcfg.HADE` is 1, hardware updating of PTE A/D bits is
-enabled during single-stage address translation. When the hypervisor extension
-is implemented, when `menvcfg.HADE` is 1, hardware updating of PTE A/D bits is
-enabled during G-stage address translation. When `menvcfg.HADE` is zero, the
-implementation behaves as though Svadu is not implemented. If Svadu is not
-implemented, `menvcfg.HADE` is read-only zero. Furthermore, for implementations
-with the hypervisor extension, `henvcfg.HADE` is read-only zero if
-`menvcfg.HADE` is zero.
+The Svadu extension adds the `HADE` bit to `menvcfg`. When `menvcfg.HADE` is 1,
+hardware updating of PTE A/D bits is enabled during single-stage address 
+translation. When the hypervisor extension is implemented, if `menvcfg.HADE` is 1,
+hardware updating of PTE A/D bits is enabled during G-stage address translation.
+When `menvcfg.HADE` is zero, the implementation behaves as though Svadu is not
+implemented. If Svadu is not implemented, `menvcfg.HADE` is read-only zero.
+Furthermore, for implementations with the hypervisor extension, `henvcfg.HADE`
+is read-only zero if `menvcfg.HADE` is zero.
 
 When the hypervisor extension is implemented, the Svadu extension adds the
 `HADE` bit to `henvcfg`. When `henvcfg.HADE` is 1, hardware updating of PTE A/D
