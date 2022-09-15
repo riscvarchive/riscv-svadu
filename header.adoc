@@ -1,9 +1,9 @@
 [[header]]
-:description: RISC-V Hardware Updating of PTE A/D Bits (Svadu)
+:description: Hardware Updating of PTE A/D Bits (Svadu)
 :company: RISC-V.org
 :revdate: 9/2022
 :revnumber: 0.1
-:revremark: This document is in development. Assume everything can change. See http://riscv.org/spec-state for details.
+:revremark: This document is in stable state. See http://riscv.org/spec-state for details.
 :url-riscv: http://riscv.org
 :doctype: book
 :preface-title: Preamble
@@ -33,16 +33,14 @@ endif::[]
 :footnote:
 :xrefstyle: short
 
-= RISC-V Hardware Updating of PTE A/D Bits (Svadu)
+= Hardware Updating of PTE A/D Bits (Svadu)
 Ved Shanbhogue
 
 // Preamble
 [WARNING]
-.This document is in the link:http://riscv.org/spec-state[Development state]
+.This document is in the link:http://riscv.org/spec-state[Stable state]
 ====
-Assume everything can change. This draft specification will change before
-being accepted as standard, so implementations made to this draft
-specification will likely not conform to the future standard.
+Assume anything could still change, but limited change should be expected.
 ====
 
 [preface]
@@ -57,7 +55,7 @@ Copyright 2022 by RISC-V International.
 [preface]
 === Contributors
 This RISC-V specification has been contributed to directly or indirectly by:
-Aaron Durbin, Earl Killian, Greg Favor, Krste Asanović, Ved Shanbhogue
+Aaron Durbin, Andrew Waterman, Earl Killian, Greg Favor, Krste Asanović, Ved Shanbhogue
 
 [preface]
 include::svadu.adoc[]
