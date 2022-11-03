@@ -41,8 +41,9 @@ PMA regions.
 The translation of virtual addresses (or guest physical addresses) to physical
 (or guest physical) addresses is accomplished with the same algorithm as
 specified in the Supervisor-Level ISA extension (section 4.3.2) and as modified
-by the hypervisor extension (section 8.5.1), except that step 7 of the 
-translation process is as follows:
+by the hypervisor extension (section 8.5.1), except that step 7 of the
+translation process, instead of causing a page-fault exception due to A and/or D
+bits being 0 when required to be 1, continues as follows:
 
 [start=7]
 . If `pte.a = 0`, or if the original memory access is a store and `pte.d = 0`:
