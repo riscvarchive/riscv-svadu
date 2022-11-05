@@ -54,8 +54,7 @@ Copyright 2022 by RISC-V International.
 
 [preface]
 === Contributors
-This RISC-V specification has been contributed to directly or indirectly by:
-Aaron Durbin, Andrew Waterman, Earl Killian, Greg Favor, Krste Asanović, Ved Shanbhogue
-
+This RISC-V specification has been contributed (in alphabetical order) to directly or indirectly by:
+Aaron Durbin, Andrew Waterman, Earl Killian, Greg Favor, John Ingalls, Krste Asanović, Paul Donahue, Ved Shanbhogue
 [preface]
 include::svadu.adoc[]
