@@ -19,7 +19,9 @@ A/D bits. The A and D bits are managed by these extensions as follows:
   must atomically check that the PTE is valid and grants sufficient permissions.
   Updates of the A bit may be performed as a result of speculation, but updates
   to the D bit must be exact (i.e., not speculative), and observed in program
-  order by the local hart.                                                     +
+  order by the local hart. When two-stage address translation is active, updates
+  of the D bit in G-stage PTEs may be performed as a result of speculative
+  updates of the A bit in VS-stage PTEs.                                       +
                                                                                +
   The PTE update must appear in the global memory order before the memory access
   that caused the PTE update and before any subsequent explicit memory access to
