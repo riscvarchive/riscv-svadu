@@ -33,7 +33,7 @@ A/D bits. The A and D bits are managed by these extensions as follows:
   The PTE update is not required to be atomic with respect to the memory access
   that caused the update and a trap may occur between the PTE update and the 
   memory access that caused the PTE update. If a trap occurs then the A and/or D
-  bit may be updated but the memory access that caused the PTE update may not
+  bit may be updated but the memory access that caused the PTE update might not
   occur. The hart must not perform the memory access that caused the PTE update
   before the PTE update is globally visible.
 
