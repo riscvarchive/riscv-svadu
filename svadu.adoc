@@ -37,8 +37,8 @@ A/D bits. The A and D bits are managed by these extensions as follows:
   occur. The hart must not perform the memory access that caused the PTE update
   before the PTE update is globally visible.
 
-Svadu extension requires the page tables to be located in cacheable main memory
-PMA regions.
+Svadu extension requires the page tables to be located in memory with hardware
+page-table write access and _RsrvEventual_ PMA.
 
 The translation of virtual addresses (or guest physical addresses) to physical
 (or guest physical) addresses is accomplished with the same algorithm as
