@@ -1,5 +1,5 @@
 [[header]]
-:description: Hardware Updating of PTE A/D Bits (Svadu)
+:description: Hardware Updating of PTE A/D Bits (Svhad)
 :company: RISC-V.org
 :revdate: 9/2022
 :revnumber: 0.1
@@ -14,7 +14,7 @@
 // Settings:
 :experimental:
 :reproducible:
-:bibtex-file: svadu.bib
+:bibtex-file: svhad.bib
 // needs to be changed? bug discussion started
 //:WaveDromEditorApp: app/wavedrom-editor.app
 :imagesoutdir: images
@@ -34,7 +34,7 @@ endif::[]
 :footnote:
 :xrefstyle: short
 
-= Hardware Updating of PTE A/D Bits (Svadu)
+= Hardware Updating of PTE A/D Bits (Svhad)
 Ved Shanbhogue
 
 // Preamble
@@ -59,4 +59,4 @@ This RISC-V specification has been contributed (in alphabetical order) to direct
 
 Aaron Durbin, Andrew Waterman, Earl Killian, Greg Favor, John Ingalls, Krste Asanović, Paul Donahue, Ved Shanbhogue
 [preface]
-include::svadu.adoc[]
+include::svhad.adoc[]
