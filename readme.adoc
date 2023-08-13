@@ -1,6 +1,6 @@
 = RISC-V Hardware Updating of PTE A/D Bits
 
-The Svhad extension adds support and CSR control for hardware updating of PTE A/D bits.
+The Svadu extension adds support and CSR control for hardware updating of PTE A/D bits.
 
 = License
 
