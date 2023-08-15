@@ -28,8 +28,8 @@ To build the document, you'll need the following tools installed on your system:
 This project uses submodules to include the RISC-V documentation toolchain. 
 
 ```
-  git clone --recurse-submodule https://github.com/riscv/riscv-svhad.git
-  cd ./riscv-svhad.git
+  git clone --recurse-submodule https://github.com/riscv/riscv-svadu.git
+  cd ./riscv-svadu.git
   make VERSION=v1.0.0 REVMARK=Draft
 ```
 
