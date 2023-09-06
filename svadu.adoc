@@ -81,12 +81,7 @@ behaves as though Svadu were not implemented. If Svadu is not implemented,
 hypervisor extension, `henvcfg.ADUE` is read-only zero if `menvcfg.ADUE` is zero.
 
 When the hypervisor extension is implemented, the Svadu extension adds the
-<<<<<<< HEAD
 `ADUE` bit (bit 61) to `henvcfg`. When `henvcfg.ADUE` is 1, hardware updating of
 PTE A/D bits is enabled during VS-stage address translation. When `henvcfg.ADUE`
-=======
-`HADE` bit (bit 61) to `henvcfg`. When `henvcfg.HADE` is 1, hardware updating of
-PTE A/D bits is enabled during VS-stage address translation. When `henvcfg.HADE`
->>>>>>> 7b9fa93 (freeze vote feedback)
 is zero, the implementation behaves as though Svadu were not implemented for
 VS-stage address translation.
