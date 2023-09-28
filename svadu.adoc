@@ -18,11 +18,12 @@ A/D bits. The A and D bits are managed by these extensions as follows:
   The PTE update must be atomic with respect to other accesses to the PTE, and
   must atomically check that the PTE is valid and grants sufficient permissions
   as part of conditionally making the update. Updates of the A bit may be
-  performed as a result of speculation, but updates to the D bit must be exact
-  (i.e., non-speculative), and observed in program order by the local hart. When
-  two-stage address translation is active, updates of the D bit in G-stage PTEs
-  may be performed as a result of speculative updates of the A bit in VS-stage
-  PTEs.                                                                        +
+  performed as a result of speculation, even if the associated memory access
+  ultimately is not performed architecturally. However, updates to the D bit,
+  resulting from an explicit store, must be exact (i.e., non-speculative), and
+  observed in program order by the local hart. When two-stage address
+  translation is active, updates of the D bit in G-stage PTEs may be performed
+  as a result of speculative updates of the A bit in VS-stage PTEs.            +
                                                                                +
   The PTE update must appear in the global memory order before the memory access
   that caused the PTE update and before any subsequent explicit memory access to
@@ -40,6 +41,9 @@ A/D bits. The A and D bits are managed by these extensions as follows:
 
 [NOTE]
 ====
+The PTE updates due to memory accesses ordered-after a FENCE are not themselves
+ordered by the FENCE.
+
 Simpler implementations that cannot precisely order the PTE update before
 subsequent explicit memory accesses to the associated virtual page by the local
 hart may simply order the PTE update before all subsequent explicit memory
