@@ -1,3 +1,8 @@
+[NOTE]
+====
+Hardware Updating of PTE A/D Bits (Svadu) has been merged into the Privileged Specification.  Please log any issues against the link:https://github.com/riscv/riscv-isa-manual[RISC-V ISA Manual] repository.
+====
+
 = RISC-V Hardware Updating of PTE A/D Bits
 
 The Svadu extension adds support and CSR control for hardware updating of PTE A/D bits.
